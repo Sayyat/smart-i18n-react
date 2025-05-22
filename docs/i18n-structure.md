@@ -200,4 +200,5 @@ To explore automated scripts powering this system, see [docs/gulp.md](./gulp.md)
 
 ## 📚 Related Projects
 
-- [`@sayyyat/smart-i18n`](https://www.npmjs.com/package/@sayyyat/smart-i18n) — The core CLI engine that provides scanning, merging, and type generation.
+* [`@sayyyat/smart-i18n`](https://www.npmjs.com/package/@sayyyat/smart-i18n) — The core CLI engine that provides scanning, merging, and type generation.
+* [`next-i18n-auth`](https://github.com/Sayyat/next-i18n-auth) — Real-world example integrating both smart-i18n and smart-i18n-react with feature-sliced architecture and multilingual auth flows.
