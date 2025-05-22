@@ -28,7 +28,7 @@
   "author": "Sayat Raykul",
   "license": "MIT",
   "dependencies": {
-    "@sayyyat/smart-i18n": "^2.0.7",
+    "@sayyyat/smart-i18n": "^2.0.8",
     "chalk": "^5.4.1",
     "gulp": "^4.0.0",
     "yargs": "^17.7.2"

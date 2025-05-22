@@ -3,7 +3,7 @@
  */
 
 import chalk from "chalk";
-import {CONFIG_FILE_NAME} from "@sayyyat/smart-i18n/lib/config.js";
+import {CONFIG_FILE_NAME} from "@sayyyat/smart-i18n/lib";
 
 export default function helpTask(gulp) {
     gulp.task("help", async function (done) {
