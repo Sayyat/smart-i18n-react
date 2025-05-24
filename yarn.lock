@@ -26,10 +26,10 @@
     wrap-ansi "^8.1.0"
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
 
-"@sayyyat/smart-i18n@^2.0.12":
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/@sayyyat/smart-i18n/-/smart-i18n-2.0.12.tgz#cabb795f4010143b048d76f11293c9caf3a51813"
-  integrity sha512-hQIg1F3DYnRO1tYveiePAoLt4fGTs+3IoCUz8G6W0Mc+Al0qni64IiAcCYG7ZjQxJF9Zqr/7QQoR8W41t5I34Q==
+"@sayyyat/smart-i18n@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@sayyyat/smart-i18n/-/smart-i18n-2.1.0.tgz#40fd027d76944158c82ff8c218085f43ecce75af"
+  integrity sha512-WFsoOyMh++Q2VYEvQafzDYxVBy5mm/2JY/GS8KqqWJIOcOZ0GoftQAdDw/SRdE9g67vR42U2SV6/zx6RvkViug==
   dependencies:
     chalk "^5.4.1"
     dotenv "^16.5.0"

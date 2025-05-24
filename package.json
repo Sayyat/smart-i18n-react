@@ -35,8 +35,16 @@
   ],
   "author": "Sayat Raykul",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sayyat/smart-i18n-react.git"
+  },
+  "homepage": "https://github.com/Sayyat/smart-i18n-react#readme",
+  "bugs": {
+    "url": "https://github.com/Sayyat/smart-i18n-react/issues"
+  },
   "dependencies": {
-    "@sayyyat/smart-i18n": "^2.0.12",
+    "@sayyyat/smart-i18n": "^2.1.0",
     "chalk": "^5.4.1",
     "gulp": "^4.0.0",
     "yargs": "^17.7.2"
