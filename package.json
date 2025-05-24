@@ -13,6 +13,14 @@
   "bin": {
     "smart-i18n-react": "bin/smart-i18n-react.mjs"
   },
+  "files": [
+    "bin/",
+    "lib/",
+    "src/",
+    "tasks/",
+    "gulpfile.js",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"No tests yet.\"",
     "release": "node release.mjs"
@@ -28,7 +36,7 @@
   "author": "Sayat Raykul",
   "license": "MIT",
   "dependencies": {
-    "@sayyyat/smart-i18n": "^2.0.8",
+    "@sayyyat/smart-i18n": "^2.0.12",
     "chalk": "^5.4.1",
     "gulp": "^4.0.0",
     "yargs": "^17.7.2"
