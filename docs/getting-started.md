@@ -41,17 +41,15 @@ src/
 │   ├── lib/
 │   │   ├── client.ts       // Client-side i18next initialization
 │   │   ├── config.ts       // Configuration file for languages and fallback
-│   │   ├── createTypedT.ts // Type-safe wrapper for translation functions
-│   │   ├── server.ts       // Server-side i18next initialization
-│   │   ├── settings.ts     // i18next initialization options
-│   │   └── utils.ts        // Utility functions for locale handling
-│   ├── locales/            // Translation files per language (JSON). This will be there later
+│   │   ├── safety.ts       // Type-safe wrapper for translation functions
+│   │   └── server.ts       // Server-side i18next initialization
+│   ├── locales/            // Translation files per language (JSON)
 │   ├── types/
 │   │   └── i18n.d.ts       // Type definitions for translation functions
 │   └── index.ts            // Exports i18n utilities for the project
 ```
 
-See [i18n-structure](./i18n-structure) for more information
+See [i18n-structure](./i18n-structure.md) for more information
 
 ---
 
@@ -88,5 +86,7 @@ Scaffolds a feature folder based on your custom Feature-Sliced Design.
 
 ## 📚 Related Projects
 
-* [`@sayyyat/smart-i18n`](https://www.npmjs.com/package/@sayyyat/smart-i18n) — The core CLI engine that provides scanning, merging, and type generation.
-* [`next-i18n-auth`](https://github.com/Sayyat/next-i18n-auth) — Real-world example integrating both smart-i18n and smart-i18n-react with feature-sliced architecture and multilingual auth flows.
+* [`@sayyyat/smart-i18n`](https://www.npmjs.com/package/@sayyyat/smart-i18n) — The core CLI engine that provides
+  scanning, merging, and type generation.
+* [`next-i18n-auth`](https://github.com/Sayyat/next-i18n-auth) — Real-world example integrating both smart-i18n and
+  smart-i18n-react with feature-sliced architecture and multilingual auth flows.

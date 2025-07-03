@@ -20,45 +20,6 @@
 
 ---
 
-## 📦 Installation
-
-Run the following command to install and initialize:
-
-```bash
-yarn add -D @sayyyat/smart-i18n-react
-yarn smart-i18n-react init
-````
-
-This will generate:
-
-* `i18next.config.json` — configuration file for Gulp scripts
-* `.demo-env` — environment file for translation APIs
-* `src/i18n/` — prestructured translation folder with base files
-
----
-
-## 🚀 Usage
-
-```bash
-# Create a feature folder with boilerplate
-yarn smart-i18n-react create-feature -n my-feature
-
-# List all available commands
-yarn smart-i18n-react help
-```
-
----
-
-## 🔧 Available Tasks
-
-| Command                              | Description                                                |
-| ------------------------------------ | ---------------------------------------------------------- |
-| `smart-i18n-react init`              | Copies `i18next.config.json`, `.demo-env`, and `src/i18n/` |
-| `smart-i18n-react create-feature -n` | Creates new feature folder in `src/features/`              |
-| `smart-i18n-react help`              | Displays full CLI documentation                            |
-
----
-
 ## 📁 Documentation
 
 * 📚 [Gulp Task Structure](./docs/gulp.md) — breakdown of CLI tasks and file layout
