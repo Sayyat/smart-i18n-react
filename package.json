@@ -2,7 +2,6 @@
   "name": "@sayyyat/smart-i18n-react",
   "version": "2.1.0",
   "description": "React/Next.js integration for smart-i18n with opinionated setup and automation scripts for managing translations.",
-  "smart-i18n-react-library": true,
   "main": "gulpfile.mjs",
   "type": "module",
   "exports": {
@@ -45,7 +44,7 @@
     "url": "https://github.com/Sayyat/smart-i18n-react/issues"
   },
   "dependencies": {
-    "@sayyyat/smart-i18n": "^2.1.2",
+    "@sayyyat/smart-i18n": "^2.1.3",
     "chalk": "^5.4.1",
     "gulp": "^4.0.0",
     "yargs": "^17.7.2"
