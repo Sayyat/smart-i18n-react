@@ -23,7 +23,8 @@
   ],
   "scripts": {
     "test": "echo \"No tests yet.\"",
-    "release": "node release.mjs"
+    "release": "node release.mjs",
+    "sir": "node bin/smart-i18n-react.mjs"
   },
   "keywords": [
     "i18n",
@@ -44,7 +45,7 @@
     "url": "https://github.com/Sayyat/smart-i18n-react/issues"
   },
   "dependencies": {
-    "@sayyyat/smart-i18n": "^2.1.0",
+    "@sayyyat/smart-i18n": "^2.1.2",
     "chalk": "^5.4.1",
     "gulp": "^4.0.0",
     "yargs": "^17.7.2"
