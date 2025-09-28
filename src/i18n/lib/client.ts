@@ -3,17 +3,13 @@
  */
 
 "use client";
-import i18next, { type i18n } from "i18next";
-import {
-  initReactI18next,
-  useTranslation as useI18nTranslation,
-} from "react-i18next";
+import i18next, {type i18n} from "i18next";
+import {initReactI18next, useTranslation as useI18nTranslation,} from "react-i18next";
 import resourcesToBackend from "i18next-resources-to-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
-import { NAMESPACES } from "@/i18n/generated/namespaces";
-import { TNamespace, TNamespaceTranslationKeys } from "@/i18n/generated/types";
-import { COOKIE_NAME, defaultNS, FALLBACK_LANGUAGE, languages } from "./config";
-import { safeT } from "./safety";
+import {NAMESPACES, type TNamespace, type  TNamespaceTranslationKeys} from "../generated";
+import {COOKIE_NAME, defaultNS, FALLBACK_LANGUAGE, languages} from "./config";
+import {safeT} from "./safety";
 
 // Initialize i18next for client-side
 i18next
@@ -21,28 +17,29 @@ i18next
     .use(LanguageDetector)
     .use(
         resourcesToBackend((language: string, namespace: string) => {
-          try {
-            return import(`@/i18n/locales/${language}/${namespace}.json`);
-          } catch (error) {}
+            try {
+                return import(`@/i18n/locales/${language}/${namespace}.json`);
+            } catch (error) {
+            }
         }),
     )
     .init({
-      fallbackLng: FALLBACK_LANGUAGE,
-      supportedLngs: languages,
-      ns: NAMESPACES,
-      defaultNS,
-      fallbackNS: defaultNS,
-      nsSeparator: ".",
-      keySeparator: ".",
-      load: "languageOnly",
-      detection: {
-        order: ["cookie", "htmlTag", "navigator"],
-        caches: ["cookie"],
-        lookupCookie: COOKIE_NAME, // optional, defaults to 'i18next'
-      },
-      react: {
-        useSuspense: false,
-      },
+        fallbackLng: FALLBACK_LANGUAGE,
+        supportedLngs: languages,
+        ns: NAMESPACES,
+        defaultNS,
+        fallbackNS: defaultNS,
+        nsSeparator: ".",
+        keySeparator: ".",
+        load: "languageOnly",
+        detection: {
+            order: ["cookie", "htmlTag", "navigator"],
+            caches: ["cookie"],
+            lookupCookie: COOKIE_NAME, // optional, defaults to 'i18next'
+        },
+        react: {
+            useSuspense: false,
+        },
     });
 
 export default i18next;
@@ -54,15 +51,15 @@ export default i18next;
 export function useTranslation<N extends TNamespace>(
     namespace: N,
 ): {
-  t: <K extends TNamespaceTranslationKeys[N]>(
-      key: K,
-      options?: Record<string, unknown>,
-  ) => string;
-  i18n: i18n;
-  ready: boolean;
+    t: <K extends TNamespaceTranslationKeys[N]>(
+        key: K,
+        options?: Record<string, unknown>,
+    ) => string;
+    i18n: i18n;
+    ready: boolean;
 } {
-  const { t: rawT, i18n, ready } = useI18nTranslation(namespace);
-  const t = safeT(rawT);
-  // console.log("after safeT");
-  return { t, i18n, ready };
+    const {t: rawT, i18n, ready} = useI18nTranslation(namespace);
+    const t = safeT(rawT);
+    // console.log("after safeT");
+    return {t, i18n, ready};
 }

@@ -36,8 +36,9 @@ After `init`, your project will include:
 src/
 ├── i18n/
 │   ├── generated/          // Generated files for namespaces and translation types
-│   │   ├── namespaces.     // Client-side i18next initialization
-│   │   └── types.d.ts      // Type-safe wrapper for translation functions
+│   │   ├── index.ts.       // public api
+│   │   ├── namespaces.ts   // Client-side i18next initialization
+│   │   └── types.ts        // Type-safe wrapper for translation functions
 │   ├── lib/
 │   │   ├── client.ts       // Client-side i18next initialization
 │   │   ├── config.ts       // Configuration file for languages and fallback
@@ -45,7 +46,7 @@ src/
 │   │   └── server.ts       // Server-side i18next initialization
 │   ├── locales/            // Translation files per language (JSON)
 │   ├── types/
-│   │   └── i18n.d.ts       // Type definitions for translation functions
+│   │   └── i18n.ts         // Type definitions for translation functions
 │   └── index.ts            // Exports i18n utilities for the project
 ```
 

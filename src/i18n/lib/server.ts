@@ -3,15 +3,13 @@
  */
 
 "use server";
-import { createInstance } from "i18next";
-import { safeT } from "./safety";
-import { TNamespace, TNamespaceTranslationKeys } from "@/i18n/generated/types";
-import { FALLBACK_LANGUAGE, TLanguage } from "@/i18n";
-import { cookies } from "next/headers";
-import { COOKIE_NAME } from "@/i18n/lib/config";
+import {createInstance} from "i18next";
+import {safeT} from "./safety";
+import {NAMESPACES, type TNamespace, type  TNamespaceTranslationKeys} from "../generated";
+import {COOKIE_NAME, FALLBACK_LANGUAGE, type TLanguage} from "./config";
+import {cookies} from "next/headers";
 import fs from "fs/promises";
 import path from "path";
-import { NAMESPACES } from "@/i18n/generated/namespaces";
 
 export async function getUserLanguage(): Promise<TLanguage> {
     return (
@@ -83,5 +81,5 @@ export async function getTranslation<N extends TNamespace>(
     const i18nextInstance = await initI18nextOnce(language, ns);
     const rawT = i18nextInstance.getFixedT(language, ns);
     const t = safeT(rawT);
-    return { t };
+    return {t};
 }

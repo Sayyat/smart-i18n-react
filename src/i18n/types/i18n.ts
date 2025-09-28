@@ -2,7 +2,7 @@
  * Copyright (c) 2025. Sayat Raykul
  */
 
-import { TNamespace, TNamespaceTranslationKeys } from "@/i18n/generated/types";
+import type { TNamespace, TNamespaceTranslationKeys } from "../generated";
 
 export type TFunction<N extends TNamespace> = <
   K extends TNamespaceTranslationKeys[N],
