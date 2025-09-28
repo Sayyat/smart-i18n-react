@@ -53,5 +53,9 @@
     "i18next-resources-to-backend": "^1.2.1",
     "react-i18next": "^15.5.2"
   },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=9"
+  },
   "packageManager": "yarn@4.10.3"
 }
