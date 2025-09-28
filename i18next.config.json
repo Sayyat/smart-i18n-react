@@ -8,12 +8,15 @@
     "src/app/**/*.{jsx,tsx}",
     "src/core/components/**/*.{js,jsx,ts,tsx}",
     "src/core/hooks/**/*.{js,jsx,ts,tsx}",
-    "src/shared/components/**/*.{js,jsx,ts,tsx}",
-    "src/shared/hooks/**/*.{js,jsx,ts,tsx}",
-    "src/shared/services/api.{js,ts}",
+    "src/screens/**/*.{js,jsx,ts,tsx}",
+    "src/widgets/**/*.{js,jsx,ts,tsx}",
     "src/features/*/components/**/*.{js,jsx,ts,tsx}",
     "src/features/*/hooks/**/*.{js,jsx,ts,tsx}",
-    "src/features/*/lib/zod.{js,ts}"
+    "src/features/*/providers/**/*.{js,jsx,ts,tsx}",
+    "src/features/*/lib/zod.{js,ts}",
+    "src/shared/components/**/*.{js,jsx,ts,tsx}",
+    "src/shared/hooks/**/*.{js,jsx,ts,tsx}",
+    "src/shared/services/api.{js,ts}"
   ],
   "excludePatterns": [
     "src/**/*.d.ts",
