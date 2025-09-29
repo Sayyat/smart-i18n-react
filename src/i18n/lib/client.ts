@@ -49,7 +49,7 @@ export default i18next;
  */
 
 export function useTranslation<N extends TNamespace>(
-    namespace: N,
+    namespace?: N,
 ): {
     t: <K extends TNamespaceTranslationKeys[N]>(
         key: K,
