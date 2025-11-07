@@ -100,7 +100,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sayyyat/smart-i18n-react@workspace:."
   dependencies:
-    "@sayyyat/smart-i18n": "npm:^2.2.5"
+    "@sayyyat/smart-i18n": "npm:^2.2.7"
     chalk: "npm:^5.6.2"
     gulp: "npm:^4.0.2"
     yargs: "npm:^18.0.0"
@@ -114,9 +114,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sayyyat/smart-i18n@npm:^2.2.5":
-  version: 2.2.5
-  resolution: "@sayyyat/smart-i18n@npm:2.2.5"
+"@sayyyat/smart-i18n@npm:^2.2.7":
+  version: 2.2.7
+  resolution: "@sayyyat/smart-i18n@npm:2.2.7"
   dependencies:
     chalk: "npm:^5.6.2"
     dotenv: "npm:^17.2.2"
@@ -130,7 +130,7 @@ __metadata:
     yargs: "npm:^18.0.0"
   bin:
     smart-i18n: ./bin/smart-i18n.mjs
-  checksum: 10c0/11559d4be5c219a9e4a2182b25a58036d871a2f03f0b7e3322333e15990c17fb8afa4f77af7c95a9a3350004e5e2c817edf8bd9f323d3c91f37bc8e81b2fa1cf
+  checksum: 10c0/9f62d602320b9ddd67944f31fbb4f1f169d2260179200f8d595bba0f58db42331b2960599420c1d6b07cbcc1a1990838fe79cf9ff814524c41b61781f4e7e214
   languageName: node
   linkType: hard
 

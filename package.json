@@ -44,7 +44,7 @@
     "url": "https://github.com/Sayyat/smart-i18n-react/issues"
   },
   "dependencies": {
-    "@sayyyat/smart-i18n": "^2.2.5",
+    "@sayyyat/smart-i18n": "^2.2.7",
     "chalk": "^5.6.2",
     "gulp": "^4.0.2",
     "yargs": "^18.0.0"
